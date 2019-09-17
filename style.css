@@ -1,20 +1,30 @@
 /*   GLOBAL  */
 
 div.page{
-    width: 100%;
-    height: 100%;
-    position: relative;
+    height:100vh;
 }
 
 /*   HOME PAGE   */
 
 div.home{
-    background-color: grey;
+    background-color: darkgray;
 }
 
-#navBar{
-    position: relative;
+a{
+    text-decoration: none;
+    font-size: 30px;
 }
+
+li{
+    background-color: black;
+    float:left;
+    position:relative;
+    top:88vh;
+    padding: 20px 50px;
+    display: block; /*Removes Bullet Point*/
+    z-index: 1;
+}
+
 
 
 /*   ABOUT US PAGE   */
