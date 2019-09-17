@@ -1,22 +1,44 @@
+/*   GLOBAL  */
+
 div.page{
     width: 100%;
     height: 100%;
+    position: relative;
 }
+
+/*   HOME PAGE   */
+
 div.home{
-    background-color: #a1a1a1;
+    background-color: grey;
 }
+
+#navBar{
+    position: relative;
+}
+
+
+/*   ABOUT US PAGE   */
 
 div.about{
     background-color: aqua;
 }
 
+
+/*   PROJECTS PAGE   */
+
 div.projects{
     background-color: antiquewhite;
 }
 
+
+/*   HOBBIES PAGE   */
+
 div.hobbies{
     background-color: coral;
 }
+
+
+/*   CONTACT PAGE   */
 
 div.contact{
     background-color: azure;
