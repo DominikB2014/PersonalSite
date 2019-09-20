@@ -2,7 +2,6 @@
 
 div.page{
     height:100vh;
-    z-index: -1;
 }
 
 /*   HOME PAGE   */
@@ -22,6 +21,7 @@ h1{
     font-family: 'Titillium Web', sans-serif;
     font-size: 95px;
     font-weight: 100;
+    z-index: 1;
 }
 
 /*   NavBar   */
@@ -50,7 +50,7 @@ ul{
 }
 
 li{
-    float:left;
+    float:left; /* Makes NavBar Horizontal */
     padding: 20px 50px;
     display: block; /*Removes Bullet Point*/
 }
