@@ -13,12 +13,9 @@ function updateNav() {
 
 function updatePageNum(currentPosition){
     let height = pages[0].clientHeight;
-    console.log(height);
-    console.log(currentPosition);
     let pageFactor = 0.3; //How much of the next page must be hidden
-    for (let i = 0; i < pages.length; i++){
-        if (currentPosition > height*i - height*pageFactor){page = i}
-    }
+    page = Math.floor(currentPosition/height + pageFactor);
+    console.log(page);
 }
 
 function setNav(pageNumber){
@@ -32,4 +29,5 @@ function setNav(pageNumber){
         }
     }
 }
+
 

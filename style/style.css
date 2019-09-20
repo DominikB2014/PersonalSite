@@ -6,7 +6,7 @@ div.page{
 
 /* --------- HOME PAGE --------- */
 div.home{
-    background-image: url("images/AdobeStock_257330006.jpeg");
+    background-image: url("../images/AdobeStock_257330006.jpeg");
     background-size: cover;
     background-position-x: right;
     background-repeat: no-repeat;
