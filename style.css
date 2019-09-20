@@ -1,10 +1,10 @@
-/*   GLOBAL  */
+/* --------- GLOBAL --------- */
 
 div.page{
     height:100vh;
 }
 
-/*   HOME PAGE   */
+/* --------- HOME PAGE --------- */
 div.home{
     background-image: url("images/AdobeStock_257330006.jpeg");
     background-size: cover;
@@ -24,10 +24,11 @@ h1{
     z-index: 1;
 }
 
-/*   NavBar   */
+/* ---------  NavBar --------- */
 
 a{
     text-decoration: none;
+    position: relative;
     font-size: 30px;
     padding:20px;
     color: white;
@@ -50,6 +51,7 @@ ul{
 }
 
 li{
+    position:relative;
     float:left; /* Makes NavBar Horizontal */
     padding: 20px 50px;
     display: block; /*Removes Bullet Point*/
@@ -59,29 +61,33 @@ li{
     background-color: blue;
 }
 
+.navBar-current:hover{
+    background-color: blue;
+}
 
-/*   ABOUT US PAGE   */
+
+/* --------- ABOUT US PAGE --------- */
 
 div.about{
     background-image: linear-gradient(rgb(30,30,30),grey,lightgray);
 }
 
 
-/*   PROJECTS PAGE   */
+/* --------- PROJECTS PAGE --------- */
 
 div.projects{
     background-color: antiquewhite;
 }
 
 
-/*   HOBBIES PAGE   */
+/* --------- HOBBIES PAGE --------- */
 
 div.hobbies{
     background-color: coral;
 }
 
 
-/*   CONTACT PAGE   */
+/* --------- CONTACT PAGE --------- */
 
 div.contact{
     background-color: azure;
