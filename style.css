@@ -55,6 +55,9 @@ li{
     display: block; /*Removes Bullet Point*/
 }
 
+.navBar-current{
+    background-color: blue;
+}
 
 
 /*   ABOUT US PAGE   */
