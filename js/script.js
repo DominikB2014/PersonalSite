@@ -30,4 +30,12 @@ function setNav(pageNumber){
     }
 }
 
-
+$(document).ready(function () {
+    let scrollTo = $(".scroll");
+    scrollTo.click(function (e) {
+        e.preventDefault();
+        $('body,html').animate({
+            scrollTop:$(this.hash).offset().top
+        })
+    })
+});
