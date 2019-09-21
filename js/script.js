@@ -15,7 +15,17 @@ function updatePageNum(currentPosition){
     let height = pages[0].clientHeight;
     let pageFactor = 0.3; //How much of the next page must be hidden
     page = Math.floor(currentPosition/height + pageFactor);
-    console.log(page);
+    updateTitle(page);
+}
+
+function updateTitle(page){
+    switch(page){
+        case 0:{document.title = "Home"; break;}
+        case 1:{document.title = "About"; break;}
+        case 2:{document.title = "Projects"; break;}
+        case 3:{document.title = "Hobbies"; break;}
+        case 4:{document.title = "Contact"; break;}
+    }
 }
 
 function setNav(pageNumber){
