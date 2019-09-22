@@ -61,12 +61,11 @@ li{
 #navHome{
     background-image: url("icons/home-white.jpg");
     background-size: cover;
-    opacity: 0.5;
 }
 
 img{
     object-fit: scale-down;
-    width: 30px;
+    width: fit-content;
     height: 30px;
 }
 
