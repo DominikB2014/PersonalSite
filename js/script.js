@@ -1,11 +1,16 @@
 const nav = document.getElementsByClassName("navBar");
+const navUl = document.getElementById("navBar");
 const navLinks = document.getElementsByTagName("a");
-const pages = document.getElementsByClassName("page") || null;
+const pages = document.getElementsByClassName("page");
 
 let page = 0; //Current Page Number
 
 window.onload = function(){updateNav()};
 window.onscroll = function () {updateNav()};
+
+$(document).ready(function() {
+    $("#title").fadeIn(2000);
+});
 
 
 /**
@@ -25,14 +30,14 @@ $(document).ready(function () {
         e.preventDefault();
         $('body,html').animate({
             scrollTop:$(this.hash).offset().top
-        })
+        }, 800)
     })
 });
 
 /* --------- Helper Functions --------- */
 
 /**
- * Updates the global page number variable
+ * Updates the global page number variable based on scroll position
  * @param currentPosition - scroll position (distance from top)
  */
 function updatePageNum(currentPosition){
@@ -43,7 +48,7 @@ function updatePageNum(currentPosition){
 }
 
 /**
- * Updates the document title (tab text)
+ * Updates the document title (tab text) based on scroll position
  * @param page - the current page number
  */
 function updateTitle(page){
@@ -61,13 +66,14 @@ function updateTitle(page){
  * @param pageNumber - what page the user is on
  */
 function setNav(pageNumber){
+
     for (let i = 0; i < pages.length - 1; i++){
         if ((pageNumber - 1) === i){
             nav[i].classList.add("navBar-current");
-            navLinks[i].classList.add("navBar-current")}
+            navLinks[i+1].classList.add("navBar-current")}
         else {
             nav[i].classList.remove("navBar-current");
-            navLinks[i].classList.remove("navBar-current");
+            navLinks[i+1].classList.remove("navBar-current");
         }
     }
 }

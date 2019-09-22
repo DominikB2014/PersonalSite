@@ -6,7 +6,7 @@ div.page{
 
 /* --------- HOME PAGE --------- */
 div.home{
-    background-image: url("../images/AdobeStock_257330006.jpeg");
+    background-image: url("../images/background/AdobeStock_Resize.jpg");
     background-size: cover;
     background-position-x: right;
     background-repeat: no-repeat;
@@ -22,6 +22,7 @@ h1{
     font-size: 95px;
     font-weight: 100;
     z-index: 1;
+    display: none;
 }
 
 /* ---------  NavBar --------- */
@@ -55,6 +56,18 @@ li{
     float:left; /* Makes NavBar Horizontal */
     padding: 20px 50px;
     display: block; /*Removes Bullet Point*/
+}
+
+#navHome{
+    background-image: url("icons/home-white.jpg");
+    background-size: cover;
+    opacity: 0.5;
+}
+
+img{
+    object-fit: scale-down;
+    width: 30px;
+    height: 30px;
 }
 
 .navBar-current{
